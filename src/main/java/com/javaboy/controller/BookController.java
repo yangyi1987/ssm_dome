@@ -2,17 +2,19 @@ package com.javaboy.controller;
 
 
 import com.javaboy.entity.Book;
-import com.javaboy.service.BookService;
+import com.javaboy.service.BookServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-@RestController
+@Controller
+@RequestMapping("")
 public class BookController {
+
     @Autowired
-    BookService bookService;
+    BookServiceImpl bookService;
 
     @RequestMapping("/book")
     public List<Book> getUserList(){
