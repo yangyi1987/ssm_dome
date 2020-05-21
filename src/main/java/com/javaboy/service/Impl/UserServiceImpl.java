@@ -24,10 +24,10 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User login(Integer userId, String passWord) {
-        System.out.println("<----------------->");
-        System.out.println(passWord);
-        System.out.println(userId);
         User user = userMapper.login(userId,passWord);
+        System.out.println(user.getUserId());
+        System.out.println(user.getPassWord());
+        System.out.println(user.getUserType());
         return user;
     }
 

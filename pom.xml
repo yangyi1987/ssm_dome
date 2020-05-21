@@ -147,6 +147,13 @@
       <version>1.0.18</version>
     </dependency>
 
+<!--    codec 加密-->
+    <dependency>
+      <groupId>commons-codec</groupId>
+      <artifactId>commons-codec</artifactId>
+      <version>1.11</version>
+    </dependency>
+
   </dependencies>
 
 </project>
